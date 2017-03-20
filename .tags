@@ -1,0 +1,443 @@
+html	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-javascript/index.html	/^<html lang="en">$/;"	function	line:2
+head	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-javascript/index.html	/^<head>$/;"	function	line:4
+meta	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-javascript/index.html	/^	<meta charset="UTF-8">$/;"	function	line:5
+meta	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-javascript/index.html	/^	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" \/>$/;"	function	line:6
+title	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-javascript/index.html	/^	<title>使用JavaScript实现拖拽<\/title>$/;"	function	line:7
+style	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-javascript/index.html	/^	<style>$/;"	function	line:8
+body	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-javascript/index.html	/^<body>$/;"	function	line:27
+div	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-javascript/index.html	/^	<div id="target">JS<\/div>$/;"	function	line:28
+script	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-javascript/index.html	/^	<script src=".\/app.js"><\/script>$/;"	function	line:29
+oTarget	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-javascript/app.js	/^var oTarget = document.getElementById('target');$/;"	variable	line:5
+startX	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-javascript/app.js	/^var startX = 0; \/\/ 鼠标点 x 坐标的初始值$/;"	variable	line:7
+startY	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-javascript/app.js	/^var startY = 0; \/\/ 鼠标点 y 坐标的初始值$/;"	variable	line:8
+targetSourceX	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-javascript/app.js	/^var targetSourceX = 0; \/\/ 目标元素初始 x 坐标$/;"	variable	line:10
+targetSourceY	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-javascript/app.js	/^var targetSourceY = 0; \/\/ 目标元素初始 y 坐标$/;"	variable	line:11
+isMobile	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-javascript/app.js	/^var isMobile = 'ontouchstart' in document;$/;"	variable	line:13
+startEvent	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-javascript/app.js	/^var startEvent = isMobile ? 'touchstart' : 'mousedown';$/;"	variable	line:18
+moveEvent	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-javascript/app.js	/^var moveEvent = isMobile ? 'touchmove' : 'mousemove';$/;"	variable	line:19
+endEvent	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-javascript/app.js	/^var endEvent = isMobile ? 'touchend' : 'mouseup';$/;"	variable	line:20
+dragstart	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-javascript/app.js	/^function dragstart(event) {$/;"	function	line:23
+dragstart	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-javascript/app.js	/^function dragstart(event) {$/;"	function	line:23
+dragmove	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-javascript/app.js	/^function dragmove(event) {$/;"	function	line:37
+dragmove	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-javascript/app.js	/^function dragmove(event) {$/;"	function	line:37
+dragend	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-javascript/app.js	/^function dragend(event) {$/;"	function	line:53
+dragend	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-javascript/app.js	/^function dragend(event) {$/;"	function	line:53
+getStyle	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-javascript/app.js	/^function getStyle(elem, property) {$/;"	function	line:62
+getStyle	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-javascript/app.js	/^function getStyle(elem, property) {$/;"	function	line:62
+getTransform	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-javascript/app.js	/^function getTransform() {$/;"	function	line:69
+getTransform	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-javascript/app.js	/^function getTransform() {$/;"	function	line:69
+getTargetPos	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-javascript/app.js	/^function getTargetPos(elem) {$/;"	function	line:87
+getTargetPos.pos.x	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-javascript/app.js	/^    var pos = {x: 0, y: 0};$/;"	property	line:88
+getTargetPos.pos.y	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-javascript/app.js	/^    var pos = {x: 0, y: 0};$/;"	property	line:88
+return.x	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-javascript/app.js	/^            return pos = {$/;"	property	line:98
+return.x	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-javascript/app.js	/^            return pos = {$/;"	property	line:110
+return.y	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-javascript/app.js	/^                x: x,$/;"	property	line:111
+getTargetPos	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-javascript/app.js	/^function getTargetPos(elem) {$/;"	function	line:87
+setTargetPos	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-javascript/app.js	/^function setTargetPos(elem, pos) {$/;"	function	line:119
+setTargetPos	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-javascript/app.js	/^function setTargetPos(elem, pos) {$/;"	function	line:119
+transform	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jsoop/app.js	/^        transform = function() {$/;"	function	line:4
+Drag	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jsoop/app.js	/^    function Drag(selector) {$/;"	function	line:24
+Drag	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jsoop/app.js	/^    function Drag(selector) {$/;"	class	line:24
+Drag.constructor	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jsoop/app.js	/^    Drag.prototype = {$/;"	property	line:35
+init	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jsoop/app.js	/^        init: function() {$/;"	function	line:37
+Drag.init	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jsoop/app.js	/^        constructor: Drag,$/;"	method	line:36
+getStyle	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jsoop/app.js	/^        getStyle: function(property) {$/;"	function	line:40
+Drag.getStyle	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jsoop/app.js	/^        },$/;"	method	line:39
+getPosition	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jsoop/app.js	/^        getPosition: function() {$/;"	function	line:43
+Drag.getPosition	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jsoop/app.js	/^        },$/;"	method	line:42
+Drag.getPosition.pos.x	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jsoop/app.js	/^            var pos = {$/;"	property	line:44
+Drag.getPosition.pos.y	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jsoop/app.js	/^                x: 0,$/;"	property	line:45
+return.x	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jsoop/app.js	/^                    return pos = {$/;"	property	line:55
+return.x	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jsoop/app.js	/^                    return pos = {$/;"	property	line:67
+return.y	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jsoop/app.js	/^                        x: x,$/;"	property	line:68
+setPostion	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jsoop/app.js	/^        setPostion: function(options) {$/;"	function	line:75
+Drag.setPostion	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jsoop/app.js	/^        },$/;"	method	line:73
+setDrag	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jsoop/app.js	/^        setDrag: function() {$/;"	function	line:84
+Drag.setDrag	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jsoop/app.js	/^        },$/;"	method	line:82
+dragstart	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jsoop/app.js	/^            function dragstart(event) {$/;"	function	line:97
+Drag.setDrag.dragstart	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jsoop/app.js	/^            function dragstart(event) {$/;"	function	line:97
+dragmove	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jsoop/app.js	/^            function dragmove(event) {$/;"	function	line:112
+Drag.setDrag.dragmove	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jsoop/app.js	/^            function dragmove(event) {$/;"	function	line:112
+dragend	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jsoop/app.js	/^            function dragend() {$/;"	function	line:125
+Drag.setDrag.dragend	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jsoop/app.js	/^            function dragend() {$/;"	function	line:125
+_moveunderway	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/app.js	/^  var _moveunderway = null;$/;"	variable	line:4
+_moveend	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/app.js	/^  var _moveend = null;$/;"	variable	line:5
+Drag	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/app.js	/^  function Drag (selector) {$/;"	function	line:8
+Drag	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/app.js	/^  function Drag (selector) {$/;"	class	line:8
+movestart	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/app.js	/^  Drag.prototype.movestart = function (event) {$/;"	function	line:32
+Drag.movestart	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/app.js	/^  Drag.prototype.movestart = function (event) {$/;"	method	line:32
+moveunderway	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/app.js	/^  Drag.prototype.moveunderway = function (event) {$/;"	function	line:48
+Drag.moveunderway	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/app.js	/^  Drag.prototype.moveunderway = function (event) {$/;"	method	line:48
+moveend	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/app.js	/^  Drag.prototype.moveend = function (event) {$/;"	function	line:59
+Drag.moveend	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/app.js	/^  Drag.prototype.moveend = function (event) {$/;"	method	line:59
+becomeDrag	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/app.js	/^    becomeDrag: function () {$/;"	function	line:72
+add	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/app.js	/^    add: function(a, b) {$/;"	function	line:83
+jQuery	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	jQuery = function( selector, context ) {$/;"	function	line:61
+fcamelCase	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	fcamelCase = function( all, letter ) {$/;"	function	line:85
+completed	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	completed = function() {$/;"	function	line:90
+init	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	init: function( selector, context, rootjQuery ) {$/;"	function	line:101
+toArray	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	toArray: function() {$/;"	function	line:202
+get	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	get: function( num ) {$/;"	function	line:208
+pushStack	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	pushStack: function( elems ) {$/;"	function	line:220
+each	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	each: function( callback, args ) {$/;"	function	line:236
+ready	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	ready: function( fn ) {$/;"	function	line:240
+slice	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	slice: function() {$/;"	function	line:247
+first	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	first: function() {$/;"	function	line:252
+last	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	last: function() {$/;"	function	line:256
+eq	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	eq: function( i ) {$/;"	function	line:260
+map	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	map: function( callback ) {$/;"	function	line:266
+end	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	end: function() {$/;"	function	line:272
+jQuery.fn.init	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^};$/;"	class	line:281
+noConflict	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	noConflict: function( deep ) {$/;"	function	line:354
+holdReady	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	holdReady: function( hold ) {$/;"	function	line:374
+ready	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	ready: function( wait ) {$/;"	function	line:383
+isFunction	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	isFunction: function( obj ) {$/;"	function	line:410
+isWindow	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	isWindow: function( obj ) {$/;"	function	line:416
+isNumeric	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	isNumeric: function( obj ) {$/;"	function	line:420
+type	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	type: function( obj ) {$/;"	function	line:424
+isPlainObject	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	isPlainObject: function( obj ) {$/;"	function	line:434
+isEmptyObject	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	isEmptyObject: function( obj ) {$/;"	function	line:461
+error	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	error: function( msg ) {$/;"	function	line:469
+parseHTML	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	parseHTML: function( data, context, keepScripts ) {$/;"	function	line:476
+parseXML	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	parseXML: function( data ) {$/;"	function	line:506
+noop	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	noop: function() {},$/;"	function	line:526
+globalEval	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	globalEval: function( code ) {$/;"	function	line:529
+camelCase	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	camelCase: function( string ) {$/;"	function	line:553
+nodeName	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	nodeName: function( elem, name ) {$/;"	function	line:557
+each	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	each: function( obj, callback, args ) {$/;"	function	line:562
+trim	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	trim: function( text ) {$/;"	function	line:611
+makeArray	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	makeArray: function( arr, results ) {$/;"	function	line:616
+inArray	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	inArray: function( elem, arr, i ) {$/;"	function	line:633
+merge	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	merge: function( first, second ) {$/;"	function	line:637
+grep	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	grep: function( elems, callback, inv ) {$/;"	function	line:657
+map	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	map: function( elems, callback, arg ) {$/;"	function	line:677
+proxy	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	proxy: function( fn, context ) {$/;"	function	line:714
+proxy	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^		proxy = function() {$/;"	function	line:731
+access	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	access: function( elems, fn, key, value, chainable, emptyGet, raw ) {$/;"	function	line:743
+fn	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^					fn = function( elem, key, value ) {$/;"	function	line:772
+swap	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	swap: function( elem, options, callback, args ) {$/;"	function	line:799
+promise	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^jQuery.ready.promise = function( obj ) {$/;"	function	line:820
+jQuery.ready.promise	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^});$/;"	function	line:818
+isArraylike	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function isArraylike( obj ) {$/;"	function	line:849
+isArraylike	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function isArraylike( obj ) {$/;"	function	line:849
+sortOrder	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	sortOrder = function( a, b ) {$/;"	function	line:909
+funescape	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	funescape = function( _, escaped, escapedWhitespace ) {$/;"	function	line:1006
+Sizzle	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function Sizzle( selector, context, results, seed ) {$/;"	function	line:1049
+createCache	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function createCache() {$/;"	function	line:1164
+cache	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	function cache( key, value ) {$/;"	function	line:1167
+markFunction	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function markFunction( fn ) {$/;"	function	line:1182
+assert	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function assert( fn ) {$/;"	function	line:1191
+addHandle	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function addHandle( attrs, handler ) {$/;"	function	line:1213
+siblingCheck	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function siblingCheck( a, b ) {$/;"	function	line:1228
+createInputPseudo	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function createInputPseudo( type ) {$/;"	function	line:1255
+createButtonPseudo	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function createButtonPseudo( type ) {$/;"	function	line:1266
+createPositionalPseudo	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function createPositionalPseudo( fn ) {$/;"	function	line:1277
+assert	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^		assert(function( div ) {$/;"	function	line:1461
+assert	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^		assert(function( div ) {$/;"	function	line:1483
+assert	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^		assert(function( div ) {$/;"	function	line:1515
+matches	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^Sizzle.matches = function( expr, elements ) {$/;"	function	line:1653
+matchesSelector	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^Sizzle.matchesSelector = function( elem, expr ) {$/;"	function	line:1657
+contains	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^Sizzle.contains = function( context, elem ) {$/;"	function	line:1686
+attr	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^Sizzle.attr = function( elem, name ) {$/;"	function	line:1694
+error	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^Sizzle.error = function( msg ) {$/;"	function	line:1715
+uniqueSort	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^Sizzle.uniqueSort = function( results ) {$/;"	function	line:1723
+classCache	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^				classCache( className, function( elem ) {$/;"	function	line:1894
+markFunction	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^					markFunction(function( seed, matches ) {$/;"	function	line:2032
+markFunction	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^				markFunction(function( seed, matches, context, xml ) {$/;"	function	line:2061
+setFilters	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function setFilters() {}$/;"	function	line:2260
+tokenize	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function tokenize( selector, parseOnly ) {$/;"	function	line:2264
+toSelector	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function toSelector( tokens ) {$/;"	function	line:2331
+addCombinator	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function addCombinator( matcher, combinator, base ) {$/;"	function	line:2341
+elementMatcher	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function elementMatcher( matchers ) {$/;"	function	line:2391
+condense	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function condense( unmatched, map, filter, context, xml ) {$/;"	function	line:2405
+setMatcher	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function setMatcher( preFilter, selector, matcher, postFilter, postFinder, postSelector ) {$/;"	function	line:2426
+matcherFromTokens	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function matcherFromTokens( tokens ) {$/;"	function	line:2519
+matcherFromGroupMatchers	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function matcherFromGroupMatchers( elementMatchers, setMatchers ) {$/;"	function	line:2574
+superMatcher	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^		superMatcher = function( seed, context, xml, results, expandContext ) {$/;"	function	line:2579
+multipleContexts	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function multipleContexts( selector, contexts, results ) {$/;"	function	line:2702
+select	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function select( selector, context, results, seed ) {$/;"	function	line:2711
+addHandle	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	addHandle( "type|href|height|width", function( elem, name, isXML ) {$/;"	function	line:2801
+addHandle	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	addHandle( "value", function( elem, name, isXML ) {$/;"	function	line:2815
+addHandle	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	addHandle( booleans, function( elem, name, isXML ) {$/;"	function	line:2827
+createOptions	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function createOptions( options ) {$/;"	function	line:2851
+Callbacks	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^jQuery.Callbacks = function( options ) {$/;"	function	line:2881
+fire	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^		fire = function( data ) {$/;"	function	line:2906
+add	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^			add: function() {$/;"	function	line:2935
+add	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^					(function add( args ) {$/;"	function	line:2939
+remove	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^			remove: function() {$/;"	function	line:2966
+has	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^			has: function( fn ) {$/;"	function	line:2988
+empty	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^			empty: function() {$/;"	function	line:2992
+disable	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^			disable: function() {$/;"	function	line:2998
+disabled	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^			disabled: function() {$/;"	function	line:3003
+lock	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^			lock: function() {$/;"	function	line:3007
+locked	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^			locked: function() {$/;"	function	line:3015
+fireWith	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^			fireWith: function( context, args ) {$/;"	function	line:3019
+fire	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^			fire: function() {$/;"	function	line:3032
+fired	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^			fired: function() {$/;"	function	line:3037
+Deferred	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	Deferred: function( func ) {$/;"	function	line:3046
+state	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^				state: function() {$/;"	function	line:3055
+always	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^				always: function() {$/;"	function	line:3058
+then	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^				then: function( \/* fnDone, fnFail, fnProgress *\/ ) {$/;"	function	line:3062
+promise	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^				promise: function( obj ) {$/;"	function	line:3086
+when	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	when: function( subordinate \/* , ..., subordinateN *\/ ) {$/;"	function	line:3134
+updateFunc	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^			updateFunc = function( i, contexts, values ) {$/;"	function	line:3146
+jQuery	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	jQuery(function() {$/;"	function	line:3248
+Data	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function Data() {$/;"	function	line:3313
+get	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^		get: function() {$/;"	function	line:3318
+accepts	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^Data.accepts = function( owner ) {$/;"	function	line:3328
+key	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	key: function( owner ) {$/;"	function	line:3340
+set	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	set: function( owner, data, value ) {$/;"	function	line:3376
+get	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	get: function( owner, key ) {$/;"	function	line:3402
+access	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	access: function( owner, key, value ) {$/;"	function	line:3412
+remove	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	remove: function( owner, key ) {$/;"	function	line:3446
+hasData	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	hasData: function( owner ) {$/;"	function	line:3484
+discard	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	discard: function( owner ) {$/;"	function	line:3489
+hasData	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	hasData: function( elem ) {$/;"	function	line:3504
+data	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	data: function( elem, name, data ) {$/;"	function	line:3508
+removeData	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	removeData: function( elem, name ) {$/;"	function	line:3512
+_data	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	_data: function( elem, name, data ) {$/;"	function	line:3518
+_removeData	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	_removeData: function( elem, name ) {$/;"	function	line:3522
+data	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	data: function( key, value ) {$/;"	function	line:3528
+removeData	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	removeData: function( key ) {$/;"	function	line:3619
+dataAttr	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function dataAttr( elem, key, data ) {$/;"	function	line:3626
+queue	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	queue: function( elem, type, data ) {$/;"	function	line:3655
+dequeue	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	dequeue: function( elem, type ) {$/;"	function	line:3674
+next	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^			next = function() {$/;"	function	line:3681
+_queueHooks	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	_queueHooks: function( elem, type ) {$/;"	function	line:3710
+queue	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	queue: function( type, data ) {$/;"	function	line:3721
+dequeue	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	dequeue: function( type ) {$/;"	function	line:3747
+delay	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	delay: function( time, type ) {$/;"	function	line:3754
+stop	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^			hooks.stop = function() {$/;"	function	line:3760
+clearQueue	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	clearQueue: function( type ) {$/;"	function	line:3765
+promise	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	promise: function( type, obj ) {$/;"	function	line:3770
+resolve	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^			resolve = function() {$/;"	function	line:3776
+attr	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	attr: function( name, value ) {$/;"	function	line:3805
+removeAttr	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	removeAttr: function( name ) {$/;"	function	line:3809
+prop	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	prop: function( name, value ) {$/;"	function	line:3815
+removeProp	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	removeProp: function( name ) {$/;"	function	line:3819
+addClass	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	addClass: function( value ) {$/;"	function	line:3825
+removeClass	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	removeClass: function( value ) {$/;"	function	line:3864
+toggleClass	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	toggleClass: function( value, stateVal ) {$/;"	function	line:3902
+hasClass	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	hasClass: function( selector ) {$/;"	function	line:3948
+val	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	val: function( value ) {$/;"	function	line:3961
+get	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^			get: function( elem ) {$/;"	function	line:4024
+get	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^			get: function( elem ) {$/;"	function	line:4032
+set	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^			set: function( elem, value ) {$/;"	function	line:4069
+attr	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	attr: function( elem, name, value ) {$/;"	function	line:4091
+removeAttr	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	removeAttr: function( elem, value ) {$/;"	function	line:4139
+set	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^			set: function( elem, value ) {$/;"	function	line:4161
+prop	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	prop: function( elem, name, value ) {$/;"	function	line:4181
+get	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^			get: function( elem ) {$/;"	function	line:4212
+set	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	set: function( elem, value, name ) {$/;"	function	line:4223
+get	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^		get: function( elem ) {$/;"	function	line:4259
+set	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^		set: function( elem, value ) {$/;"	function	line:4287
+returnTrue	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function returnTrue() {$/;"	function	line:4306
+returnFalse	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function returnFalse() {$/;"	function	line:4310
+safeActiveElement	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function safeActiveElement() {$/;"	function	line:4314
+add	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	add: function( elem, types, handler, data, selector ) {$/;"	function	line:4328
+remove	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	remove: function( elem, types, handler, selector, mappedTypes ) {$/;"	function	line:4439
+trigger	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	trigger: function( event, data, elem, onlyHandlers ) {$/;"	function	line:4509
+dispatch	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	dispatch: function( event ) {$/;"	function	line:4638
+handlers	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	handlers: function( event, handlers ) {$/;"	function	line:4697
+filter	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^		filter: function( event, original ) {$/;"	function	line:4750
+filter	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^		filter: function( event, original ) {$/;"	function	line:4763
+fix	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	fix: function( event ) {$/;"	function	line:4787
+trigger	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^			trigger: function() {$/;"	function	line:4836
+trigger	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^			trigger: function() {$/;"	function	line:4845
+trigger	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^			trigger: function() {$/;"	function	line:4855
+_default	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^			_default: function( event ) {$/;"	function	line:4863
+postDispatch	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^			postDispatch: function( event ) {$/;"	function	line:4869
+simulate	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	simulate: function( type, elem, event, bubble ) {$/;"	function	line:4880
+removeEvent	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^jQuery.removeEvent = function( elem, type, handle ) {$/;"	function	line:4904
+Event	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^jQuery.Event = function( src, props ) {$/;"	function	line:4910
+preventDefault	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	preventDefault: function() {$/;"	function	line:4950
+stopPropagation	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	stopPropagation: function() {$/;"	function	line:4959
+stopImmediatePropagation	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	stopImmediatePropagation: function() {$/;"	function	line:4968
+handle	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^		handle: function( event ) {$/;"	function	line:4984
+handler	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^			handler = function( event ) {$/;"	function	line:5009
+setup	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^			setup: function() {$/;"	function	line:5014
+teardown	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^			teardown: function() {$/;"	function	line:5019
+on	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	on: function( types, selector, data, fn, \/*INTERNAL*\/ one ) {$/;"	function	line:5030
+fn	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^			fn = function( event ) {$/;"	function	line:5071
+one	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	one: function( types, selector, data, fn ) {$/;"	function	line:5083
+off	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	off: function( types, selector, fn ) {$/;"	function	line:5086
+trigger	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	trigger: function( type, data ) {$/;"	function	line:5118
+triggerHandler	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	triggerHandler: function( type, data ) {$/;"	function	line:5123
+find	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	find: function( selector ) {$/;"	function	line:5142
+has	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	has: function( target ) {$/;"	function	line:5168
+not	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	not: function( selector ) {$/;"	function	line:5182
+filter	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	filter: function( selector ) {$/;"	function	line:5186
+is	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	is: function( selector ) {$/;"	function	line:5190
+closest	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	closest: function( selectors, context ) {$/;"	function	line:5203
+index	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	index: function( elem ) {$/;"	function	line:5233
+add	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	add: function( selector, context ) {$/;"	function	line:5253
+addBack	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	addBack: function( selector ) {$/;"	function	line:5262
+sibling	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function sibling( cur, dir ) {$/;"	function	line:5269
+parent	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	parent: function( elem ) {$/;"	function	line:5276
+parents	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	parents: function( elem ) {$/;"	function	line:5280
+parentsUntil	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	parentsUntil: function( elem, i, until ) {$/;"	function	line:5283
+next	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	next: function( elem ) {$/;"	function	line:5286
+prev	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	prev: function( elem ) {$/;"	function	line:5289
+nextAll	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	nextAll: function( elem ) {$/;"	function	line:5292
+prevAll	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	prevAll: function( elem ) {$/;"	function	line:5295
+nextUntil	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	nextUntil: function( elem, i, until ) {$/;"	function	line:5298
+prevUntil	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	prevUntil: function( elem, i, until ) {$/;"	function	line:5301
+siblings	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	siblings: function( elem ) {$/;"	function	line:5304
+children	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	children: function( elem ) {$/;"	function	line:5307
+contents	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	contents: function( elem ) {$/;"	function	line:5310
+filter	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	filter: function( expr, elems, not ) {$/;"	function	line:5342
+dir	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	dir: function( elem, dir, until ) {$/;"	function	line:5356
+sibling	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	sibling: function( n, elem ) {$/;"	function	line:5371
+winnow	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function winnow( elements, qualifier, not ) {$/;"	function	line:5385
+text	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	text: function( value ) {$/;"	function	line:5445
+append	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	append: function() {$/;"	function	line:5453
+prepend	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	prepend: function() {$/;"	function	line:5462
+before	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	before: function() {$/;"	function	line:5471
+after	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	after: function() {$/;"	function	line:5479
+remove	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	remove: function( selector, keepData ) {$/;"	function	line:5488
+empty	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	empty: function() {$/;"	function	line:5509
+clone	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	clone: function( dataAndEvents, deepDataAndEvents ) {$/;"	function	line:5527
+html	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	html: function( value ) {$/;"	function	line:5536
+replaceWith	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	replaceWith: function() {$/;"	function	line:5575
+detach	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	detach: function( selector ) {$/;"	function	line:5603
+domManip	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	domManip: function( args, callback, allowIntersection ) {$/;"	function	line:5607
+clone	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	clone: function( elem, dataAndEvents, deepDataAndEvents ) {$/;"	function	line:5718
+buildFragment	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	buildFragment: function( elems, context, scripts, selection ) {$/;"	function	line:5760
+cleanData	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	cleanData: function( elems ) {$/;"	function	line:5847
+_evalUrl	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	_evalUrl: function( url ) {$/;"	function	line:5880
+manipulationTarget	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function manipulationTarget( elem, content ) {$/;"	function	line:5894
+disableScript	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function disableScript( elem ) {$/;"	function	line:5904
+restoreScript	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function restoreScript( elem ) {$/;"	function	line:5908
+setGlobalEval	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function setGlobalEval( elems, refElements ) {$/;"	function	line:5921
+cloneCopyEvent	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function cloneCopyEvent( src, dest ) {$/;"	function	line:5932
+getAll	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function getAll( context, tag ) {$/;"	function	line:5967
+fixInput	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function fixInput( src, dest ) {$/;"	function	line:5978
+wrapAll	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	wrapAll: function( html ) {$/;"	function	line:5991
+wrapInner	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	wrapInner: function( html ) {$/;"	function	line:6023
+wrap	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	wrap: function( html ) {$/;"	function	line:6043
+unwrap	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	unwrap: function() {$/;"	function	line:6051
+vendorPropName	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function vendorPropName( style, name ) {$/;"	function	line:6079
+isHidden	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function isHidden( elem, el ) {$/;"	function	line:6101
+getStyles	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function getStyles( elem ) {$/;"	function	line:6110
+showHide	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function showHide( elements, show ) {$/;"	function	line:6114
+css	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	css: function( name, value ) {$/;"	function	line:6169
+show	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	show: function() {$/;"	function	line:6191
+hide	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	hide: function() {$/;"	function	line:6194
+toggle	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	toggle: function( state ) {$/;"	function	line:6197
+get	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^			get: function( elem, computed ) {$/;"	function	line:6217
+style	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	style: function( elem, name, value, extra ) {$/;"	function	line:6249
+css	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	css: function( elem, name, extra, styles ) {$/;"	function	line:6309
+curCSS	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^curCSS = function( elem, name, _computed ) {$/;"	function	line:6344
+setPositiveNumber	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function setPositiveNumber( elem, value, subtract ) {$/;"	function	line:6385
+augmentWidthOrHeight	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function augmentWidthOrHeight( elem, name, extra, isBorderBox, styles ) {$/;"	function	line:6393
+getWidthOrHeight	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function getWidthOrHeight( elem, name, extra ) {$/;"	function	line:6432
+css_defaultDisplay	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function css_defaultDisplay( nodeName ) {$/;"	function	line:6476
+actualDisplay	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function actualDisplay( name, doc ) {$/;"	function	line:6508
+get	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^		get: function( elem, computed, extra ) {$/;"	function	line:6517
+set	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^		set: function( elem, value, extra ) {$/;"	function	line:6529
+jQuery	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^jQuery(function() {$/;"	function	line:6546
+get	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^			get: function( elem, computed ) {$/;"	function	line:6550
+get	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^				get: function( elem, computed ) {$/;"	function	line:6568
+hidden	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	jQuery.expr.filters.hidden = function( elem ) {$/;"	function	line:6584
+visible	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	jQuery.expr.filters.visible = function( elem ) {$/;"	function	line:6590
+expand	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^		expand: function( value ) {$/;"	function	line:6602
+serialize	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	serialize: function() {$/;"	function	line:6629
+serializeArray	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	serializeArray: function() {$/;"	function	line:6632
+param	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^jQuery.param = function( a, traditional ) {$/;"	function	line:6661
+add	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^		add = function( key, value ) {$/;"	function	line:6664
+buildParams	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function buildParams( prefix, obj, traditional, add ) {$/;"	function	line:6694
+hover	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	hover: function( fnOver, fnOut ) {$/;"	function	line:6734
+bind	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	bind: function( types, data, fn ) {$/;"	function	line:6738
+unbind	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	unbind: function( types, fn ) {$/;"	function	line:6741
+delegate	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	delegate: function( selector, types, data, fn ) {$/;"	function	line:6745
+undelegate	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	undelegate: function( selector, types, fn ) {$/;"	function	line:6748
+addToPrefiltersOrTransports	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function addToPrefiltersOrTransports( structure ) {$/;"	function	line:6810
+inspectPrefiltersOrTransports	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function inspectPrefiltersOrTransports( structure, options, originalOptions, jqXHR ) {$/;"	function	line:6842
+inspect	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	function inspect( dataType ) {$/;"	function	line:6847
+ajaxExtend	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function ajaxExtend( target, src ) {$/;"	function	line:6869
+load	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^jQuery.fn.load = function( url, params, callback ) {$/;"	function	line:6885
+ajaxSetup	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	ajaxSetup: function( target, settings ) {$/;"	function	line:7028
+ajax	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	ajax: function( url, options ) {$/;"	function	line:7042
+getResponseHeader	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^				getResponseHeader: function( key ) {$/;"	function	line:7092
+getAllResponseHeaders	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^				getAllResponseHeaders: function() {$/;"	function	line:7107
+setRequestHeader	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^				setRequestHeader: function( name, value ) {$/;"	function	line:7112
+overrideMimeType	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^				overrideMimeType: function( type ) {$/;"	function	line:7122
+statusCode	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^				statusCode: function( map ) {$/;"	function	line:7130
+abort	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^				abort: function( statusText ) {$/;"	function	line:7147
+done	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^		function done( status, nativeStatusText, responses, headers ) {$/;"	function	line:7315
+getJSON	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	getJSON: function( url, data, callback ) {$/;"	function	line:7430
+getScript	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	getScript: function( url, callback ) {$/;"	function	line:7434
+ajaxHandleResponses	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function ajaxHandleResponses( s, jqXHR, responses ) {$/;"	function	line:7462
+ajaxConvert	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function ajaxConvert( s, response, jqXHR, isSuccess ) {$/;"	function	line:7518
+send	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^			send: function( _, complete ) {$/;"	function	line:7640
+callback	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^					callback = function( evt ) {$/;"	function	line:7647
+abort	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^			abort: function() {$/;"	function	line:7657
+jsonpCallback	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	jsonpCallback: function() {$/;"	function	line:7671
+xhr	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^jQuery.ajaxSettings.xhr = function() {$/;"	function	line:7745
+send	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^			send: function( headers, complete ) {$/;"	function	line:7782
+callback	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^				callback = function( type ) {$/;"	function	line:7809
+abort	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^			abort: function() {$/;"	function	line:7848
+createFxNow	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function createFxNow() {$/;"	function	line:7913
+setTimeout	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	setTimeout(function() {$/;"	function	line:7914
+createTween	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function createTween( value, prop, animation ) {$/;"	function	line:7920
+Animation	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function Animation( elem, properties, options ) {$/;"	function	line:7934
+tick	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^		tick = function() {$/;"	function	line:7943
+createTween	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^			createTween: function( prop, end ) {$/;"	function	line:7977
+stop	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^			stop: function( gotoEnd ) {$/;"	function	line:7983
+propFilter	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function propFilter( props, specialEasing ) {$/;"	function	line:8038
+tweener	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	tweener: function( props, callback ) {$/;"	function	line:8077
+prefilter	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	prefilter: function( callback, prepend ) {$/;"	function	line:8096
+defaultPrefilter	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function defaultPrefilter( elem, props, opts ) {$/;"	function	line:8105
+fire	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^			hooks.empty.fire = function() {$/;"	function	line:8120
+Tween	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function Tween( elem, options, prop, end, easing ) {$/;"	function	line:8228
+init	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	init: function( elem, options, prop, end, easing, unit ) {$/;"	function	line:8235
+cur	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	cur: function() {$/;"	function	line:8244
+run	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	run: function( percent ) {$/;"	function	line:8251
+get	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^		get: function( tween ) {$/;"	function	line:8281
+set	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^		set: function( tween ) {$/;"	function	line:8297
+set	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	set: function( tween ) {$/;"	function	line:8315
+fadeTo	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	fadeTo: function( speed, to, easing, callback ) {$/;"	function	line:8332
+animate	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	animate: function( prop, speed, easing, callback ) {$/;"	function	line:8340
+doAnimation	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^			doAnimation = function() {$/;"	function	line:8343
+stop	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	stop: function( type, clearQueue, gotoEnd ) {$/;"	function	line:8358
+stopQueue	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^		var stopQueue = function( hooks ) {$/;"	function	line:8359
+finish	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	finish: function( type ) {$/;"	function	line:8408
+genFx	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function genFx( type, includeWidth ) {$/;"	function	line:8452
+speed	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^jQuery.speed = function( speed, easing, fn ) {$/;"	function	line:8486
+complete	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	opt.complete = function() {$/;"	function	line:8505
+linear	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	linear: function( p ) {$/;"	function	line:8519
+swing	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	swing: function( p ) {$/;"	function	line:8522
+tick	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^jQuery.fx.tick = function() {$/;"	function	line:8529
+timer	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^jQuery.fx.timer = function( timer ) {$/;"	function	line:8550
+start	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^jQuery.fx.start = function() {$/;"	function	line:8558
+stop	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^jQuery.fx.stop = function() {$/;"	function	line:8564
+animated	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	jQuery.expr.filters.animated = function( elem ) {$/;"	function	line:8580
+offset	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^jQuery.fn.offset = function( options ) {$/;"	function	line:8586
+setOffset	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	setOffset: function( elem, options, i ) {$/;"	function	line:8625
+position	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	position: function() {$/;"	function	line:8675
+offsetParent	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^	offsetParent: function() {$/;"	function	line:8711
+getWindow	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^function getWindow( elem ) {$/;"	function	line:8750
+size	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^jQuery.fn.size = function() {$/;"	function	line:8798
+define	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery-plugin/jquery-2.0.3.js	/^		define( "jquery", [], function () { return jQuery; } );$/;"	function	line:8820
+eQuery	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^    var eQuery = function(selector) {$/;"	function	line:3
+init	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^        init: function(selector) {$/;"	function	line:14
+toArray	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^        toArray: function() {},$/;"	function	line:26
+get	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^        get: function() {},$/;"	function	line:27
+each	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^        each: function() {},$/;"	function	line:28
+ready	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^        ready: function() {},$/;"	function	line:29
+first	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^        first: function() {},$/;"	function	line:30
+slice	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^        slice: function() {}$/;"	function	line:31
+eQuery.fn.init	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^    }$/;"	class	line:33
+isFunction	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^        isFunction: function() {},$/;"	function	line:55
+type	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^        type: function() {},$/;"	function	line:56
+parseHTML	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^        parseHTML: function() {},$/;"	function	line:57
+parseJSON	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^        parseJSON: function() {},$/;"	function	line:58
+ajax	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^        ajax: function() {}$/;"	function	line:59
+queue	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^        queue: function() {},$/;"	function	line:65
+promise	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^        promise: function() {},$/;"	function	line:66
+attr	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^        attr: function() {},$/;"	function	line:67
+prop	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^        prop: function() {},$/;"	function	line:68
+addClass	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^        addClass: function() {},$/;"	function	line:69
+removeClass	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^        removeClass: function() {},$/;"	function	line:70
+val	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^        val: function() {},$/;"	function	line:71
+css	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^        css: function() {}$/;"	function	line:72

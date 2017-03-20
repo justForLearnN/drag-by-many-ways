@@ -245,6 +245,7 @@ jQuery.fn = jQuery.prototype = {
 	},
 
 	slice: function() {
+		console.log(this);
 		return this.pushStack( core_slice.apply( this, arguments ) );
 	},
 

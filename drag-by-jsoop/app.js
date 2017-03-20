@@ -1,75 +1,141 @@
 ;
-(function () {
-  var isMobile = 'ontouchstart' in document;
-  var _moveunderway = null;
-  var _moveend = null;
+(function() {
+    // 这是一个私有属性，不需要被实例访问
+    var transform = getTransform();
 
-  // 声明构造函数
-  function Drag (selector) {
+    function Drag(selector) {
+        // 放在构造函数中的属性，都是属于每一个实例单独拥有
+        this.elem = typeof selector == 'Object' ? selector : document.getElementById(selector);
+        this.startX = 0;
+        this.startY = 0;
+        this.sourceX = 0;
+        this.sourceY = 0;
 
-    this.oTarget = null;
-    if (typeof selector == 'object') {
-      this.oTarget = selector;
-    } else {
-      this.oTarget = document.querySelector(selector);
+        this.init();
     }
 
-    this.startX = 0;
-    this.startY = 0;
-    this.targetSourceX = 0;
-    this.targetSourceY = 0;
-    this.targetCurrentX = 0;
-    this.targetCurrentY = 0;
 
-    if (isMobile) {
-      this.oTarget.addEventListener('touchstart', this.movestart.bind(this), false);
-      this.oTarget.addEventListener('touchmove', this.moveunderway.bind(this), false);
-      this.oTarget.addEventListener('touchend', this.moveend.bind(this), false);
-    } else {
-      this.oTarget.addEventListener('mousedown', this.movestart.bind(this), false);
+    // 原型
+    Drag.prototype = {
+        constructor: Drag,
+
+        init: function() {
+            // 初始时需要做些什么事情
+            this.setDrag();
+        },
+
+        // 稍作改造，仅用于获取当前元素的属性，类似于getName
+        getStyle: function(property) {
+            return document.defaultView.getComputedStyle ? document.defaultView.getComputedStyle(this.elem, false)[property] : this.elem.currentStyle[property];
+        },
+
+        // 用来获取当前元素的位置信息，注意与之前的不同之处
+        getPosition: function() {
+            var pos = {x: 0, y: 0};
+            if(transform) {
+                var transformValue = this.getStyle(transform);
+                if(transformValue == 'none') {
+                    this.elem.style[transform] = 'translate(0, 0)';
+                } else {
+                    var temp = transformValue.match(/[0-9,\s\.]+/)[0].split(',');
+                    pos = {
+                        x: parseInt(temp[4].trim()),
+                        y: parseInt(temp[5].trim())
+                    }
+                }
+            } else {
+                if(this.getStyle('position') == 'static') {
+                    this.elem.style.position = 'relative';
+                } else {
+                    pos = {
+                        x: parseInt(this.getStyle('left') ? this.getStyle('left') : 0),
+                        y: parseInt(this.getStyle('top') ? this.getStyle('top') : 0)
+                    }
+                }
+            }
+
+            return pos;
+        },
+
+        // 用来设置当前元素的位置
+        setPostion: function(pos) {
+            if(transform) {
+                this.elem.style[transform] = 'translate('+ pos.x +'px, '+ pos.y +'px)';
+            } else {
+                this.elem.style.left = pos.x + 'px';
+                this.elem.style.top = pos.y + 'px';
+            }
+        },
+
+        // 该方法用来绑定事件
+        setDrag: function() {
+            var self = this;
+            this.elem.addEventListener('mousedown', start, false);
+            function start(event) {
+                self.startX = event.pageX;
+                self.startY = event.pageY;
+
+                var pos = self.getPosition();
+
+                self.sourceX = pos.x;
+                self.sourceY = pos.y;
+
+                document.addEventListener('mousemove', move, false);
+                document.addEventListener('mouseup', end, false);
+            }
+
+            function move(event) {
+                var currentX = event.pageX;
+                var currentY = event.pageY;
+
+                var distanceX = currentX - self.startX;
+                var distanceY = currentY - self.startY;
+
+                self.setPostion({
+                    x: (self.sourceX + distanceX).toFixed(),
+                    y: (self.sourceY + distanceY).toFixed()
+                })
+            }
+
+            function end(event) {
+                document.removeEventListener('mousemove', move);
+                document.removeEventListener('mouseup', end);
+                // do other things
+            }
+        }
     }
-  }
 
-  // 添加原型方法
-  Drag.prototype.movestart = function (event) {
-    this.startX = isMobile ? event.changedTouches[0].pageX : event.pageX;
-    this.startY = isMobile ? event.changedTouches[0].pageY : event.pageY;
+    // 私有方法，仅仅用来获取transform的兼容写法
+    function getTransform() {
+        var transform = '',
+            divStyle = document.createElement('div').style,
+            transformArr = ['transform', 'webkitTransform', 'MozTransform', 'msTransform', 'OTransform'],
 
-    var styles = document.defaultView.getComputedStyle(this.oTarget, false);
-    this.targetSourceX = parseInt(styles.left);
-    this.targetSourceY = parseInt(styles.top);
+            i = 0,
+            len = transformArr.length;
 
-    if (!isMobile) {
-      _moveunderway = this.moveunderway.bind(this);
-      _moveend = this.moveend.bind(this);
-      document.addEventListener('mousemove', _moveunderway, false);
-      document.addEventListener('mouseup', _moveend, false);
+        for(; i < len; i++)  {
+            if(transformArr[i] in divStyle) {
+                return transform = transformArr[i];
+            }
+        }
+
+        return transform;
     }
-  }
 
-  Drag.prototype.moveunderway = function (event) {
-    console.log('moveunderway');
-    var currentX = isMobile ? event.changedTouches[0].pageX : event.pageX;
-    var currentY = isMobile ? event.changedTouches[0].pageY : event.pageY;
-    var distanceX = currentX - this.startX;
-    var distanceY = currentY - this.startY;
-    this.targetCurrentX = this.targetSourceX + distanceX;
-    this.targetCurrentY = this.targetSourceY + distanceY;
-    this.oTarget.style.left = this.targetCurrentX + 'px';
-    this.oTarget.style.top = this.targetCurrentY + 'px';
-  }
-
-  Drag.prototype.moveend = function (event) {
-    this.targetSourceX = this.targetCurrentX;
-    this.targetSourceY = this.targetCurrentY;
-    if (!isMobile) {
-      document.removeEventListener('mousemove', _moveunderway);
-      document.removeEventListener('mouseup', _moveend);
-    }
-  }
-
-  window.Drag = Drag;
+    // 一种对外暴露的方式
+    window.Drag = Drag;
 })();
 
-new Drag('#target');
-new Drag('#target2');
+// 使用：声明2个拖拽实例
+new Drag('target');
+new Drag('target2');
+
+(function ($) {
+    $.fn.extend({
+        becomeDrag: function () {
+            new Drag(this[0]);
+            return this;
+        }
+    })
+})(jQuery);

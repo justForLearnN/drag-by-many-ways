@@ -1,0 +1,28 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+eQuery	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^    var eQuery = function(selector) {$/;"	function	line:3
+init	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^        init: function(selector) {$/;"	function	line:14
+toArray	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^        toArray: function() {},$/;"	function	line:26
+get	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^        get: function() {},$/;"	function	line:27
+each	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^        each: function() {},$/;"	function	line:28
+ready	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^        ready: function() {},$/;"	function	line:29
+first	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^        first: function() {},$/;"	function	line:30
+slice	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^        slice: function() {}$/;"	function	line:31
+eQuery.fn.init	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^    }$/;"	class	line:33
+isFunction	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^        isFunction: function() {},$/;"	function	line:55
+type	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^        type: function() {},$/;"	function	line:56
+parseHTML	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^        parseHTML: function() {},$/;"	function	line:57
+parseJSON	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^        parseJSON: function() {},$/;"	function	line:58
+ajax	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^        ajax: function() {}$/;"	function	line:59
+queue	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^        queue: function() {},$/;"	function	line:65
+promise	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^        promise: function() {},$/;"	function	line:66
+attr	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^        attr: function() {},$/;"	function	line:67
+prop	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^        prop: function() {},$/;"	function	line:68
+addClass	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^        addClass: function() {},$/;"	function	line:69
+removeClass	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^        removeClass: function() {},$/;"	function	line:70
+val	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^        val: function() {},$/;"	function	line:71
+css	/Users/yangbo/develop/me/drag-by-many-ways/drag-by-jquery/app.js	/^        css: function() {}$/;"	function	line:72

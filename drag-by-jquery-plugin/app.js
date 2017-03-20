@@ -77,3 +77,12 @@
 })(jQuery);
 
 $('#target').becomeDrag();
+
+
+$.fn.extend({
+    add: function(a, b) {
+        return a + b;
+    }
+})
+
+$(document.body).add(10, 20);

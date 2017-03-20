@@ -1,75 +1,108 @@
-/**
- * 只关注从pc端chrome浏览器 到 移动端的兼容，不关注IE的兼容
- */
+var oElem = document.getElementById('target');
 
-var oTarget = document.getElementById('target');
-var startX = 0; // x 坐标的初始值
-var startY = 0; // y 坐标的初始值
-var currentX = 0; // x 坐标的当前值
-var currentY = 0; // y 坐标的当前值
-var distanceX = 0; // x 坐标移动过程中产生的差值
-var distanceY = 0; // y 坐标移动过程中产生的差值
+var startX = 0;
+var startY = 0;
 
-var targetSourceX = 0; // 目标元素左上角的初始 x 坐标
-var targetSourceY = 0; // 目标元素左上角的初始 y 坐标
+var sourceX = 0;
+var sourceY = 0;
 
-// 原理： 目标元素的移动，与鼠标的移动保持一致
-// 因此： 目标元素当前的位置 = 目标元素初始的位置 +  x,y坐标移动过程中的差值
-if ('ontouchstart' in document) {
-    oTarget.addEventListener('touchstart', touchstart, false);
-    oTarget.addEventListener('touchmove', touchmove, false);
-    oTarget.addEventListener('touchend', touchend, false);
-} else {
-    oTarget.addEventListener('mousedown', mousedown, false);
-}
+oElem.addEventListener('mousedown', start, false);
 
-function mousedown(event) {
-    // 学会通过打印出事件对象的方式，在浏览器的开发者工具中查看事件对象的具体值
+function start(event) {
     startX = event.pageX;
     startY = event.pageY;
 
-    // 获取元素的详细位置信息
-    var styles = document.defaultView.getComputedStyle(oTarget, false);
-    targetSourceX = parseInt(styles.left);
-    targetSourceY = parseInt(styles.top);
+    var pos = getTargetPos(oElem);
 
-    // onmousemove 绑定的2个注意事项： 1，必须在onmousedown后绑定，否则会发现还没按下，就会移动的情况，2 mousemove必须绑定在document或者外部容器上，否则移动过快鼠标超出目标元素时，就停下不动了
-    document.addEventListener('mousemove', mousemove, false);
-    document.addEventListener('mouseup', mouseup, false);
+    sourceX = pos.x;
+    sourceY = pos.y;
+
+    document.addEventListener('mousemove', move, false);
+    document.addEventListener('mouseup', end, false);
 }
 
-function mousemove(event) {
-    currentX = event.pageX;
-    currentY = event.pageY;
-    distanceX = currentX - startX;
-    distanceY = currentY - startY;
-    oTarget.style.left = targetSourceX + distanceX + 'px';
-    oTarget.style.top = targetSourceY + distanceY + 'px';
+function move(event) {
+    var currentX = event.pageX;
+    var currentY = event.pageY;
+
+    var distanceX = currentX - startX;
+    var distanceY = currentY - startY;
+
+    setTargetPos(oElem, {
+        x: (sourceX + distanceX).toFixed(),
+        y: (sourceY + distanceY).toFixed()
+    })
 }
 
-function mouseup(event) {
-    document.removeEventListener('mousemove', mousemove);
-    document.removeEventListener('mouseup', mouseup);
+function end(event) {
+    document.removeEventListener('mousemove', move);
+    document.removeEventListener('mouseup', end);
+    // do other things
 }
 
-function touchstart(event) {
-    startX = event.changedTouches[0].pageX;
-    startY = event.changedTouches[0].pageY;
 
-    var styles = document.defaultView.getComputedStyle(oTarget, false);
-    targetSourceX = parseInt(styles.left);
-    targetSourceY = parseInt(styles.top);
+function getStyle(elem, property) {
+    // 低版本ie通过currentStyle来获取元素的样式，其他浏览器通过getComputedStyle来获取
+    return document.defaultView.getComputedStyle ? document.defaultView.getComputedStyle(elem, false)[property] : elem.currentStyle[property];
 }
 
-function touchmove(event) {
-    currentX = event.changedTouches[0].pageX;
-    currentY = event.changedTouches[0].pageY;
-    distanceX = currentX - startX;
-    distanceY = currentY - startY;
-    oTarget.style.left = targetSourceX + distanceX + 'px';
-    oTarget.style.top = targetSourceY + distanceY + 'px';
+function getTransform() {
+    var transform = '',
+        divStyle = document.createElement('div').style,
+        transformArr = ['transform', 'webkitTransform', 'MozTransform', 'msTransform', 'OTransform'],
+
+        i = 0,
+        len = transformArr.length;
+
+    for(; i < len; i++)  {
+        if(transformArr[i] in divStyle) {
+            return transform = transformArr[i];
+        }
+    }
+
+    return transform;
 }
 
-function touchend(event) {
-    // dosomething
+
+function getTargetPos(elem) {
+    var pos = {x: 0, y: 0};
+    var transform = getTransform();
+    // transform = false;
+    if(transform) {
+        var transformValue = getStyle(elem, transform);
+        if(transformValue == 'none') {
+            elem.style[transform] = 'translate(0, 0)';
+            return pos;
+        } else {
+            var temp = transformValue.match(/[0-9,\s\.]+/)[0].split(',');
+            return pos = {
+                x: parseInt(temp[4].trim()),
+                y: parseInt(temp[5].trim())
+            }
+        }
+    } else {
+        if(getStyle(elem, 'position') == 'static') {
+            elem.style.position = 'relative';
+            return pos;
+        } else {
+            var x = parseInt(getStyle(elem, 'left') ? getStyle(elem, 'left') : 0);
+            var y = parseInt(getStyle(elem, 'top') ? getStyle(elem, 'top') : 0);
+            return pos = {
+                x: x,
+                y: y
+            }
+        }
+    }
+}
+
+// pos = { x: 200, y: 100 }
+function setTargetPos(elem, pos) {
+    var transform = getTransform();
+    if(transform) {
+        elem.style[transform] = 'translate('+ pos.x +'px, '+ pos.y +'px)';
+    } else {
+        elem.style.left = pos.x + 'px';
+        elem.style.top = pos.y + 'px';
+    }
+    return elem;
 }
